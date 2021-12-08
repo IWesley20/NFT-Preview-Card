@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* ### Primary */
+    --softBlue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+
+    /* ### Neutral */
+    --veryDarkBlueBg: hsl(217, 54%, 11%);
+    --veryDarkBlueCard: hsl(216, 50%, 16%);
+    --veryDarkBlueLine: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 18px;
+    color: var(--softBlue);
+}
+
+hr {
+    border: 1px solid var(--veryDarkBlueLine);
+    opacity: 0.5;
+}
+
+body,
+html {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--veryDarkBlueBg);
+}
+
+.flex {
+    display: flex;
+}
+
+.marginizer {
+    margin: 0.8em 0;
+}
+
+.align {
+    align-items: center;
+}
+
+.main__container {
+    justify-content: center;
+    height: 100vh;
+}
+
+.card__container {
+    width: 350px;
+    background: var(--veryDarkBlueCard);
+    border-radius: 15px;
+}
+
+.flex__formatter {
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+.image__hero {
+    position: relative;
+    cursor: pointer;
+}
+
+.image__hero img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.image__hero:hover .overlay,
+.image__hero:hover .eye__icon {
+    position: absolute;
+    width: 100%;
+    height: 98.7%;
+}
+
+.image__hero:hover .overlay {
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    background: var(--cyan);
+    opacity: 0.5;
+}
+
+.image__hero:hover .eye__icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url('./images/icon-view.svg') no-repeat center;
+}
+
+.text {
+    color: var(--white);
+}
+
+.equilibrium {
+    font-size: 1.3rem;
+    letter-spacing: 0.7px;
+    cursor: pointer;
+    width: 61.17%;
+}
+
+.equilibrium:hover {
+    color: var(--cyan);
+}
+
+.etherium {
+    justify-content: space-between;
+}
+
+.subtext {
+    line-height: 1.6em;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+#currency,
+#days {
+    font-size: 0.9rem;
+    margin-left: 0.5em;
+    opacity: 0.85;
+}
+
+#currency {
+    color: var(--cyan);
+}
+
+#line {
+    margin: 0.3em 0;
+}
+
+.attribution {
+    margin-top: 0.8em;
+}
+
+.avatar__icon img {
+    width: 30px;
+    height: 30px;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+}
+
+.attr__text span {
+    cursor: pointer;
+}
+
+.attr__text span:hover {
+    color: var(--cyan);
+}

@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Links
 
-- NFT Preview Card URL: [Add live site URL here](https://nft-prev-card.netlify.app/)
+- NFT Preview Card URL: [NFT Card](https://nft-prev-card.netlify.app/)
 
 ## My process
 
